@@ -111,3 +111,7 @@ The application will launch and open automatically in your browser:
    - List the column types, completeness, and status in the **Detected Column Attributes** grid.
    - Display duplicate rows, missing names/emails, negative ages, and outliers in the **Detected Errors** textbox.
    - Request suggestions from OpenRouter and print the clean-up plan and Python script in the **AI Suggestions** textbox.
+  
+4. Runnig App Link
+
+           https://dataqualityagent-dnee7zzsjqjutjtfignsoq.streamlit.app/

@@ -153,11 +153,11 @@ def detect_dataset_attributes(df: pd.DataFrame) -> pd.DataFrame:
         # Numeric checks
         if pd.api.types.is_numeric_dtype(col_series):
             numeric_vals = col_series.dropna()
-            # Age bounds check [0, 30]
+            # Age bounds check [0, 100]
             if str(col).lower().strip() == 'age':
-                out_of_bounds = numeric_vals[(numeric_vals < 0) | (numeric_vals > 30)].count()
+                out_of_bounds = numeric_vals[(numeric_vals < 0) | (numeric_vals > 100)].count()
                 if out_of_bounds > 0:
-                    column_anomalies.append(f"{out_of_bounds} values out of [0, 30] limit")
+                    column_anomalies.append(f"{out_of_bounds} values out of [0, 100] limit")
             else:
                 positive_keywords = ['count', 'score', 'total', 'price', 'salary', 'quantity', 'amount', 'id', 'roll', 'rooll']
                 if any(kw in str(col).lower() for kw in positive_keywords):
@@ -269,10 +269,10 @@ def validate_csv(file_path: str):
             numeric_vals = col_series.dropna()
             if not numeric_vals.empty:
                 if col == age_col:
-                    out_of_bounds = numeric_vals[(numeric_vals < 0) | (numeric_vals > 30)]
+                    out_of_bounds = numeric_vals[(numeric_vals < 0) | (numeric_vals > 100)]
                     if not out_of_bounds.empty:
                         for idx, val in out_of_bounds.items():
-                            errors.append(f"• Row {idx + 1}: Age is {val} (must be between 0 and 30)")
+                            errors.append(f"• Row {idx + 1}: Age is {val} (must be between 0 and 100)")
                 else:
                     positive_keywords = ['count', 'score', 'total', 'price', 'salary', 'quantity', 'amount', 'id', 'roll', 'rooll']
                     if any(kw in col_lower for kw in positive_keywords):
@@ -300,8 +300,8 @@ def validate_csv(file_path: str):
                     if pd.notna(val):
                         try:
                             val_num = float(val)
-                            if val_num < 0 or val_num > 30:
-                                errors.append(f"• Row {idx + 1}: Age is {val_num} (must be between 0 and 30)")
+                            if val_num < 0 or val_num > 100:
+                                errors.append(f"• Row {idx + 1}: Age is {val_num} (must be between 0 and 100)")
                         except ValueError:
                             errors.append(f"• Row {idx + 1}: Age '{val}' is not a valid number")
 
@@ -384,7 +384,7 @@ with st.sidebar:
            - Mathematical outlier detection using the Interquartile Range (IQR).
            - Negative checks on positive count fields.
         4. **Standard Constraints**:
-           - If `Age` is found: bounds checked [0, 30].
+           - If `Age` is found: bounds checked [0, 100].
            - If `email` is found: regex format validated.
            - Missing checks in `name` and `roll number`.
         """
@@ -416,7 +416,7 @@ if uploaded_file is not None:
         st.dataframe(attributes_df, use_container_width=True, hide_index=True)
         
         # Call LLM helper
-        with st.spinner("Analyzing dataset anomalies and generating recommendations with OpenAI GPT..."):
+        with st.spinner("Anomalies scanning & OpenAI GPT recommendation generation in progress..."):
             attributes_text = attributes_df.to_string(index=False)
             ai_suggestions = get_openai_suggestions(errors_text, preview_text, attributes_text)
             

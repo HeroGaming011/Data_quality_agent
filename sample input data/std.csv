@@ -1,0 +1,9 @@
+student_id,name,class,math_score,attendance,join_date
+101,Rahul Sharma,X-A,85.5,92%,15/01/2026
+102, Priya Singh, X-B, 90.0, 95%, 2026-02-01
+103,Rohan Verma,X-C,105,102%,15-02-2026
+104,Sneha Gupta,10A,,88%,25/01/2026
+105,Amit Yadav,X-B,-5,70%,10/02/2026
+106,Pooja Sharma,X-C,78,missing,12/03/2026
+107,Kunal Patel,x-a,92,98%,15/03/2026
+108,Meera Das,X-B,NaN,94%,01-04-2026

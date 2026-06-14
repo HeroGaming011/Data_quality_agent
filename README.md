@@ -6,7 +6,7 @@ A complete Python project featuring a premium **Streamlit** web interface that s
 
  ## Demo Video
 
-         https://dataqualityagent-dnee7zzsjqjutjtfignsoq.streamlit.app/
+         [https://dataqualityagent-dnee7zzsjqjutjtfignsoq.streamlit.app/](https://www.loom.com/share/8d13d56dada54b599d0c95893d58f9bb)
 
 ## Key Features
 

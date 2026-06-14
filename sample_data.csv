@@ -1,0 +1,7 @@
+name,rooll number,Age,email
+Alice Johnson,101,25,alice.johnson@example.com
+Bob Smith,,22,bob.smith@invalid-email
+,103,-5,charlie.brown@example.com
+David Miller,104,35,david.miller@domain.com
+Eve Davis,105,28,
+Frank Wilson,106,19,frank.wilson@example.com

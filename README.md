@@ -4,28 +4,14 @@ A complete Python project featuring a premium **Streamlit** web interface that s
 
 ---
 
-### Team Members
-You can copy this directly into Word/Excel as a table:
+## Team Members
 
-Name	Roll No	Branch	Role
-
-Nanepalli Deepika	23U41A4430	CSD	Team Lead & Documentation
-Ydesi Chanti Babu	23U41A0560	CSE	Data Pipeline & Backend Development
-Pragada Harika	23U41A0547	CSE	Data Analysis & Visualization
-Jyothula Bhargavi	23U41A0428	ECE	Testing, Integration & Presentation
-
-
-Alternative (more professional for project reviews):
-
-Name	Roll No	Branch	Assigned Responsibility
-
-Nanepalli Deepika	23U41A4430	CSD	Project Coordination, Documentation & Reporting
-Ydesi Chanti Babu	23U41A0560	CSE	Data Collection, ETL Pipeline & Backend Development
-Pragada Harika	23U41A0547	CSE	Data Cleaning, Analysis & Dashboard Development
-Jyothula Bhargavi	23U41A0428	ECE	Testing, Integration, Validation & Presentation Preparation
-
-
-This second version usually looks better in a final-year project report.
+| Name | Roll No | Branch | Role |
+|------|----------|--------|------|
+| Pragada Harika | 23U41A0547 | CSE |  Team Lead & Documentation|
+| Ydesi Chanti Babu | 23U41A0560 | CSE | Data Quality Engine Developer |
+| Nanepalli Deepika | 23U41A4430 | CSD | AI/LLM Integration Developer |
+| Jyothula Bhargavi | 23U41A0428 | ECE | Testing Engineer and Frontend |
 
  ### Demo Video
   [click here to view Demo Video](https://www.loom.com/share/8d13d56dada54b599d0c95893d58f9bb)

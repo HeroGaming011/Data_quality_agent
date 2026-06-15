@@ -4,6 +4,14 @@ A complete Python project featuring a premium **Streamlit** web interface that s
 
 ---
 
+### Team Members
+Name	Roll No	Branch	Role
+
+NANEPALLI DEEPIKA	23U41A4430	CSD	Team Lead / Documentation Lead
+YDESI CHANTI BABU	23U41A0560	CSE	Data Pipeline & Backend Development
+PRAGADA HARIKA	23U41A0547	CSE	Data Analysis & Visualization
+Jyothula Bhargavi	23U41A0428	ECE	Testing, Integration & Presentation
+
  ### Demo Video
   [click here to view Demo Video](https://www.loom.com/share/8d13d56dada54b599d0c95893d58f9bb)
 
